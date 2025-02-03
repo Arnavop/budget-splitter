@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.page {
+  padding: 2rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.budget-form, .group-form {
+  margin-bottom: 2rem;
+}
+
+.budget-form input, .group-form input {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.budget-form button, .group-form button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: not-allowed;
+}
+
+.expense-list, .expense-split {
+  margin-top: 1rem;
+}
+
+.expense-list ul, .expense-split ul {
+  list-style: none;
+  padding: 0;
+}
+
+.expense-list li, .expense-split li {
+  padding: 0.5rem;
+  background-color: #f4f4f4;
+  margin-bottom: 0.5rem;
+}
+
+.home {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.home h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.feature {
+  flex: 1;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+}
+
+.feature h2 {
+  color: #007bff;
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta-buttons button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
