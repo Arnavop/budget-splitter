@@ -1,38 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <>
+    <div className="page home">
+      <h1 className="main-heading">Welcome to the Budgeting and Expense Splitter App</h1>
+      <p className="sub-heading">Manage your finances effectively and split expenses with ease.</p>
 
-      <div className="page home">
-        <h1>Welcome to the Budgeting and Expense Splitter App</h1>
-        <p>Manage your finances effectively and split expenses with ease.</p>
-
-        <div className="features">
-          <div className="feature">
-            <h2>Budget Tracking</h2>
-            <p>Set and monitor your monthly budgets with ease.</p>
-          </div>
-          <div className="feature">
-            <h2>Expense Splitting</h2>
-            <p>Quickly split expenses with friends and groups.</p>
-          </div>
-          <div className="feature">
-            <h2>Financial Insights</h2>
-            <p>Gain insights into your spending habits.</p>
-          </div>
-        </div>
-
-        <div className="cta-buttons">
-          <button disabled>Get Started</button>
-          <button disabled>Learn More</button>
-        </div>
+      <div className="features">
+        <Link to="/budget" className="feature">
+          <h2>Budget Tracking</h2>
+          <p>Set and monitor your monthly budgets with ease.</p>
+        </Link>
+        <Link to="/split-expenses" className="feature">
+          <h2>Expense Splitting</h2>
+          <p>Quickly split expenses with friends and groups.</p>
+        </Link>
+        <Link to="/finance" className="feature">
+          <h2>Financial Insights</h2>
+          <p>Gain insights into your spending habits.</p>
+        </Link>
       </div>
 
-      <footer className="footer">
-        © 2025 Expense Splitter App. All rights reserved.
-      </footer>
-    </>
+
+    </div>
   );
 };
 

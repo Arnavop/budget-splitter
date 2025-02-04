@@ -8,11 +8,18 @@ body {
 
 .navbar {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
   background-color: #333;
   color: white;
+}
+
+.navbar-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .navbar-brand {
@@ -36,12 +43,12 @@ body {
 
 .footer {
   text-align: center;
-  padding: 1rem;
   background-color: #333;
   color: white;
   position: fixed;
   bottom: 0;
   width: 100%;
+  height: 50px;
 }
 
 .budget-form, .group-form {
@@ -79,8 +86,13 @@ body {
 .home {
   text-align: center;
   max-width: 800px;
-  margin: 0 auto;
   padding: 2rem;
+  display:flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
 }
 
 .home h1 {
@@ -90,20 +102,31 @@ body {
 
 .features {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  gap: 1rem;               /* Space between features */
+  flex-wrap: wrap;         /* Wrap items on smaller screens */
   margin-top: 2rem;
+  width: 100%;
 }
 
 .feature {
-  flex: 1;
+  flex: 1 1 250px;          /* Responsive sizing */
   padding: 1rem;
   background-color: #f4f4f4;
-  margin: 0 0.5rem;
+  margin: 0.5rem;
   border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect */
 }
 
 .feature h2 {
   color: #007bff;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cta-buttons {
@@ -121,4 +144,70 @@ body {
   border-radius: 5px;
   cursor: not-allowed;
   opacity: 0.6;
+}
+
+.feature{
+  text-decoration: none;
+}
+
+.feature p{
+  color: #333;
+}
+
+.btn-learn{
+  cursor: pointer;
+}
+
+.about {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+}
+
+.about h1 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.about h2 {
+  color: #444;
+  margin-top: 1.5rem;
+}
+
+.about ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.about li {
+  margin-bottom: 0.5rem;
+}
+
+.about-footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+  color: #666;
+}
+
+
+.navbar .navbar-buttons{
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.navbar-buttons li{
+  background-color: #007bff;
+  padding: 2px 10px;
+  border-radius: 4px;
+  cursor:pointer;
 }
