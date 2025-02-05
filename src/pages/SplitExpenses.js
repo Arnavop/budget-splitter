@@ -6,8 +6,13 @@ const SplitExpenses = () => {
       <h1>Split Expenses</h1>
       <div className="group-form">
         <label>Group Name:</label>
-        <input type="text" placeholder="Enter group name" disabled />
+        <input type="text" placeholder="Enter group name" />
         <button disabled>Create Group</button>
+      </div>
+      <div className="group-form">
+        <label>Member Name:</label>
+        <input type="text" placeholder="Enter member name" />
+        <button disabled>Create Member</button>
       </div>
       <div className="expense-split">
         <h2>Expense Split</h2>

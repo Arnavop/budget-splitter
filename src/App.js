@@ -7,6 +7,8 @@ import About from './pages/About';
 import Budget from './pages/Budget';
 import SplitExpenses from './pages/SplitExpenses';
 import './index.css';
+import Login from './pages/Login';
+import Signup from './pages/SignUp';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
         <Route path="/about" element={<About />} />
         <Route path="/budget" element={<Budget />} />
         <Route path="/split-expenses" element={<SplitExpenses />} />

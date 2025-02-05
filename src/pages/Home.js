@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BudgetIndicator from '../components/budgetindicator';
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
       <h1 className="main-heading">Welcome to the Budgeting and Expense Splitter App</h1>
       <p className="sub-heading">Manage your finances effectively and split expenses with ease.</p>
 
+      <BudgetIndicator/>
       <div className="features">
         <Link to="/budget" className="feature">
           <h2>Budget Tracking</h2>
